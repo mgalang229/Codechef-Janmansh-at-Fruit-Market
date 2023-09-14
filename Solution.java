@@ -9,7 +9,7 @@ public class Solution {
 		T = fs.nextInt();
 		for (int tc = 1; tc <= T; tc++) {
 			int x = fs.nextInt(), a = fs.nextInt(), b = fs.nextInt(), c = fs.nextInt();
-			int ans = Math.min(Integer.MAX_VALUE, compute(x, a, b));
+			int ans = compute(x, a, b);
 			ans = Math.min(ans, compute(x, b, c));
 			ans = Math.min(ans, compute(x, a, c));
 			System.out.println(ans);
